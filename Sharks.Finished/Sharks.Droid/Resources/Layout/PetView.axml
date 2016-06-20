@@ -4,23 +4,25 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="20dp">
-    <TextView
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:text="Booboo"
-        local:MvxBind="Text Name" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="X"
-        local:MvxBind="Text Sex"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp" />
-    <CheckBox        
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:text="Neutered"
-        android:id="@+id/checkBox1" 
-        local:MvxBind="Checked IsNeutered"/>
+    android:layout_marginBottom="20dp"
+    android:alpha="1"
+    local:MvxBind="BackgroundColor IsNeutered, Converter=BoolToColor">
+  <TextView
+      android:layout_width="100dp"
+      android:layout_height="wrap_content"
+      android:text="Booboo"
+      local:MvxBind="Text Name" />
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="X"
+      local:MvxBind="Text Sex"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp" />
+  <CheckBox
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:text="Neutered"
+      android:id="@+id/checkBox1"
+      local:MvxBind="Checked IsNeutered"/>
 </LinearLayout>

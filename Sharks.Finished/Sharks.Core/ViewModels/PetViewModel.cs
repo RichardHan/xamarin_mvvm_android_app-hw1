@@ -39,7 +39,5 @@ namespace Sharks.Core.ViewModels
                 SetProperty(ref _isNeutered, value);
             }
         }
-
-
     }
 }
